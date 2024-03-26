@@ -39,9 +39,9 @@ export const router = new Router([
     // `
   },
   {
-    path: '#/houses',
+    path: '#/house',
     controllers: [HouseController],
-    view: 'app/views/carsView.html'
+    view: 'app/views/HouseView.html'
   },
   {
     path: '#/about',

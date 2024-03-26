@@ -16,12 +16,12 @@
         <input type="number" name="bedrooms" class="form-control" required min="1" max="20">
       </div>
       <div class="col-2 mb-1">
-        <label for="">bathrooms</label>
-        <input type="number" name="bedrooms" class="form-control" required min="1" max="20">
+        <label for="">Bathrooms</label>
+        <input type="number" name="bathrooms" class="form-control" required min="1" max="20">
       </div>
       <div class="col-2 mb-1">
         <label for="">Approx. sqft</label>
-        <input type="number" name="sqft" class="form-control" required min="1" max="100000">
+        <input type="number" name="sqft" class="form-control" required min="1000" max="100000">
       </div>
       <div class="col-2 mb-1">
         <label for="">Price</label>
@@ -29,11 +29,11 @@
       </div>
       <div class="col-4 mb-4">
         <label for="">Short Description</label>
-        <input type="text" name="description" class="form-control" required minlength="1" maxLength="50">
+        <input type="text" name="description" class="form-control" required minlength="5" maxLength="50">
       </div>
       <div class="col-4 mb-4">
         <label for="">Image URL of the house</label>
-        <input type="url" name="imgUrl" class="form-control" required minlength="1" maxLength="50">
+        <input type="url" name="imgUrl" class="form-control" required>
       </div>
       <div class="mb-2">
         <button type="submit" class="btn btn-primary">submit</button>

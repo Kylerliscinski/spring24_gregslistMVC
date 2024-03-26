@@ -8,7 +8,7 @@ import { getFormData } from "../utils/FormHandler.js";
 export class HouseController {
   constructor() {
     console.log('🏠 loaded');
-    houseService.createHouse()
+    houseService.loadHouse()
     this.drawHouse()
   }
 

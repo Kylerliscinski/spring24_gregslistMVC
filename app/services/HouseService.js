@@ -12,6 +12,10 @@ class HouseService {
     this.saveHouse()
   }
 
+  saveHouse() {
+    let dataString = JSON.stringify(AppState.houses)
+    localStorage.setItem('houses', dataString)
+  }
   deleteHouse(houseId) {
     let indexToDelete = AppState.houses.findIndex(house => house.id == houseId)
     console.log('deleting', indexToDelete);
@@ -19,13 +23,8 @@ class HouseService {
     this.saveHouse()
   }
 
-  saveHouse() {
-    let dataString = JSON.stringify(AppState.houses)
-    localStorage.setItem('houses', dataString)
-  }
-
   loadHouse() {
-    let dataString = localStorage.getItem('house')
+    let dataString = localStorage.getItem('houses')
     console.log('😊', dataString);
     const houseData = JSON.parse(dataString)
     console.log(houseData);
